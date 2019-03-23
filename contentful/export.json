@@ -1,0 +1,5675 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "tag",
+        "type": "ContentType",
+        "createdAt": "2019-01-27T22:02:50.282Z",
+        "updatedAt": "2019-01-27T22:02:53.817Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-01-27T22:02:53.817Z",
+        "firstPublishedAt": "2019-01-27T22:02:53.817Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Tag",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "post",
+        "type": "ContentType",
+        "createdAt": "2019-01-27T22:02:50.296Z",
+        "updatedAt": "2019-01-27T22:02:54.391Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-01-27T22:02:54.391Z",
+        "firstPublishedAt": "2019-01-27T22:02:54.391Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Post",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "publishDate",
+          "name": "Publish Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tags",
+          "name": "Tags",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "tag"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "metaDescription",
+          "name": "Meta Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "size": {
+                "min": null,
+                "max": 320
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2019-01-27T22:02:50.329Z",
+        "updatedAt": "2019-02-09T00:55:35.817Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-02-09T00:55:35.817Z",
+        "firstPublishedAt": "2019-01-27T22:02:55.131Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "metaDescription",
+          "name": "Meta Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "size": {
+                "min": null,
+                "max": 320
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "community",
+          "name": "Community",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "about",
+          "name": "About",
+          "type": "Boolean",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "homepage",
+        "type": "ContentType",
+        "createdAt": "2019-01-30T12:35:17.226Z",
+        "updatedAt": "2019-02-04T15:56:32.541Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2019-02-04T15:56:32.541Z",
+        "firstPublishedAt": "2019-01-30T12:35:17.791Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "displayField": "mainHeroHeader",
+      "name": "Homepage",
+      "description": "The homepage of WeKnowNona",
+      "fields": [
+        {
+          "id": "mainHeroHeader",
+          "name": "Main Hero Header",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "cardCalloutTitle",
+          "name": "Card Callout Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cardCalloutParagraph",
+          "name": "Card Callout Paragraph",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoCardQuote",
+          "name": "Info Card Quote",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoCardTitle1",
+          "name": "Info Card Title 1",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoCardTitle2",
+          "name": "Info Card Title 2",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoCardTitle3",
+          "name": "Info Card Title 3",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoCardParagraph1",
+          "name": "Info Card Paragraph 1",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoCardParagraph2",
+          "name": "Info Card Paragraph 2",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoCardParagraph3",
+          "name": "Info Card Paragraph 3",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoCardPicture",
+          "name": "Info Card Picture",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "customerReview",
+          "name": "Customer Review",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "customerOnReview",
+          "name": "Customer On Review",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "miniHeroTitle",
+          "name": "Mini Hero Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "miniHeroTagline",
+          "name": "Mini Hero Tagline",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "miniHeroImage",
+          "name": "Mini Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "cardCalloutParagraph2",
+          "name": "Card Callout Paragraph 2",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "listing",
+        "type": "ContentType",
+        "createdAt": "2019-02-09T00:14:19.044Z",
+        "updatedAt": "2019-02-09T03:10:10.532Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2019-02-09T03:10:10.532Z",
+        "firstPublishedAt": "2019-02-09T00:14:19.314Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 12,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Listing",
+      "description": "A Real Estate Listing for We Know Nona",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "publishDate",
+          "name": "Publish Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "beds",
+          "name": "Beds",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "baths",
+          "name": "Baths",
+          "type": "Number",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "price",
+          "name": "Price",
+          "type": "Integer",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "metaDescription",
+          "name": "Meta Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "size": {
+                "max": 320
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "xkm3wy5bii5q",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-01-27T22:02:54.041Z",
+        "createdBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-01-27T22:02:56.265Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "tag",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "xkm3wy5bii5q",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-01-27T22:02:54.533Z",
+        "createdBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-01-27T22:02:56.189Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "post",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor"
+        },
+        {
+          "fieldId": "publishDate",
+          "settings": {
+            "ampm": "12",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "tags",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor"
+        },
+        {
+          "fieldId": "metaDescription",
+          "settings": {
+            "helpText": "Used for SEO. If left blank a post/page excerpt will be used. See the README for more details."
+          },
+          "widgetId": "multipleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "xkm3wy5bii5q",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 8,
+        "createdAt": "2019-01-27T22:02:55.316Z",
+        "createdBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-02-09T00:55:36.650Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "page",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "metaDescription",
+          "settings": {
+            "helpText": "Used for SEO. If left blank a post/page excerpt will be used. See the README for more details."
+          },
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "community",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "about",
+          "widgetId": "boolean",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "xkm3wy5bii5q",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2019-01-30T12:35:18.043Z",
+        "createdBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-02-04T15:56:33.116Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "homepage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "mainHeroHeader",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "cardCalloutTitle",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "cardCalloutParagraph",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "infoCardQuote",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "infoCardTitle1",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "infoCardTitle2",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "infoCardTitle3",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "infoCardParagraph1",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "infoCardParagraph2",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "infoCardParagraph3",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "infoCardPicture",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "customerReview",
+          "widgetId": "markdown"
+        },
+        {
+          "fieldId": "customerOnReview",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "miniHeroTitle",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "miniHeroTagline",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "miniHeroImage",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "cardCalloutParagraph2",
+          "widgetId": "markdown"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "xkm3wy5bii5q",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 24,
+        "createdAt": "2019-02-09T00:14:19.483Z",
+        "createdBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-02-09T03:10:11.046Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1OeRx3Kn1dS4J84x1fvvze",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "listing",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "publishDate",
+          "settings": {
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "beds",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "baths",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "price",
+          "settings": {
+            "helpText": "Place a 0 if there is no price or you don't want to list one"
+          },
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "metaDescription",
+          "settings": {
+            "helpText": "Used for SEO. If left blank a post/page excerpt will be used. See the README for more details."
+          },
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3nAFKDwDRKo6Wg0WO0QsaM",
+        "type": "Entry",
+        "createdAt": "2019-01-27T22:03:21.826Z",
+        "updatedAt": "2019-02-07T18:10:20.099Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 90,
+        "publishedAt": "2019-02-07T18:10:20.099Z",
+        "firstPublishedAt": "2019-01-27T22:03:40.720Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 91,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "About The Maycumber Team"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6mc88PkUjmvJAE3mkJniP9"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "about-the-maycumber-team"
+        },
+        "body": {
+          "en-US": "## A Few Words About Us\n\n#### Let us introduce ourselves\n\nWith over 50 years of combined experience in the real estate industry, the Maycumber Team provides a variety of services to meet their clients needs when buying or selling a home. Located in the East Orlando Area, Allyn and Pam Maycumber are true experts in the Lake Nona and Medical City Area. They are committed to the community and the people they help serve.\n\nThe Lake Nona area, with the addition of the new Medical City and the University of Central Florida School of Medicine Campus, is one of the fastest growing real estate markets in Florida. Look no further than the Maycumber Real Estate team to assist you in all of your real estate needs in Lake Nona and in the Greater Orlando area.\n\n## A Place To Live, A Place To Thrive\n\n#### Come and visit and see fo yourself…\n\nThe Lake Nona and surrounding Orlando area is a fantastic area to live and call home!\n\n> \"There truly is nothing like the serenity and comfort found in Lake Nona Florida.\"\n\nCome and see why we think this is one of the best places on earth to choose to live.\n"
+        },
+        "metaDescription": {
+          "en-US": "Manually Entered Meta Description Example - Wrinkler ur givin me a spook heckin floofs long water shoob, sub woofer boof heckin dat tungg tho corgo, smol borkf you are doing me a frighten. Wow such tempt ruff bork I am bekom fat shooberino."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "11wqveXTWEh3CbCDazLpSG",
+        "type": "Entry",
+        "createdAt": "2019-01-30T12:42:53.554Z",
+        "updatedAt": "2019-02-10T20:18:29.785Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 474,
+        "publishedAt": "2019-02-10T20:18:29.785Z",
+        "firstPublishedAt": "2019-01-30T12:49:32.880Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 14,
+        "version": 475,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "homepage"
+          }
+        }
+      },
+      "fields": {
+        "mainHeroHeader": {
+          "en-US": "We Know Nona"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4HcRwRxUkKqxYIRoqSqTrs"
+            }
+          }
+        },
+        "cardCalloutTitle": {
+          "en-US": "Hire The Maycumber Team Today!"
+        },
+        "cardCalloutParagraph": {
+          "en-US": "With over 50 years of combined experience in the real estate industry, the Maycumber Team provides a variety of services to meet their clients needs when buying or selling a home. Located in the East Orlando Area, Allyn and Pam Maycumber are true experts in the Lake Nona and Medical City Area. They are committed to the community and the people they help serve."
+        },
+        "infoCardQuote": {
+          "en-US": "This is the ultimate definition of a full service real estate firm."
+        },
+        "infoCardTitle1": {
+          "en-US": "Superior Education including International property specialist, CRB Certified Residential Broker top 2% in nation"
+        },
+        "infoCardTitle2": {
+          "en-US": "A Unique And Vibrate Culture"
+        },
+        "infoCardTitle3": {
+          "en-US": "Superb Quality Service"
+        },
+        "infoCardParagraph1": {
+          "en-US": "[The Keller Williams](https://www.kwnona.com/ \"Keller Williams\") commitment to education for both new and seasoned agents makes our company truly stand out from the rest. From in market-center classroom training, online education, seminars, speakers, coaching programs and more – KW truly does provide holistic opportunities to grow your business to its best!"
+        },
+        "infoCardParagraph2": {
+          "en-US": "The unique KW culture is noticeably different than others in the marketplace.  The Keller Williams Realty company truly desires a sense of family and community. We uphold these values as both rare and unique in our industry. Both for The Maycumber Team and Keller Williams as a whole, we truly believe – when you’re here, you’re family."
+        },
+        "infoCardParagraph3": {
+          "en-US": "We whole heartedly believe that Keller Williams Realty allows us to stand out from all the other real estate firms. The support and values the Keller Williams Company upholds define us as innovators and leaders in the industry. These are just a few of the ways we see KW helping to truly lead the marketplace…\n\n"
+        },
+        "infoCardPicture": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "38zeZIF0TvdLy2K1H7G48y"
+            }
+          }
+        },
+        "customerReview": {
+          "en-US": "Thanks to the Maycumber team for all their help! They sold our house (in 6 days!), helped us find a temporary rental and helped us find and build our new house. They worked tirelessly to meet our every need."
+        },
+        "customerOnReview": {
+          "en-US": "Myron Ascher"
+        },
+        "miniHeroTitle": {
+          "en-US": "Live"
+        },
+        "miniHeroTagline": {
+          "en-US": "The Lake Nona life"
+        },
+        "miniHeroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "60Fh7rjFskYzJHcRhnhQht"
+            }
+          }
+        },
+        "cardCalloutParagraph2": {
+          "en-US": "## One Of The Best Cities to Live\n\n[Lake Nona Medical City](http://www.lakenona.com/live/community/lake-nona-town-center/ \"Lake Nona Medical City\") is an emerging biomedical research and educational hub which includes the University of Central Florida College of Medicine and Health Sciences Campus, Sanford-Burnham Medical Research Institute, the Orlando VA Medical Center, Nemours Children’s Hospital and a University of Florida Research and Academic Center. In the Lake Nona area, the population has grown from merely 1,500 in 2000 to over 50,000 people in 2015.\n\nSchools in Lake Nona: \n* Lake Nona High School\n* Lake Nona Middle School\n* NorthLake Park Community School\n* Valencia Community College\n* UCF Medical Collage\n"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3i4aeuuEVq3W742HJ2fDW3",
+        "type": "Entry",
+        "createdAt": "2019-02-02T21:19:27.115Z",
+        "updatedAt": "2019-02-09T00:55:57.897Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 151,
+        "publishedAt": "2019-02-09T00:55:57.897Z",
+        "firstPublishedAt": "2019-02-02T21:33:03.474Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 152,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Allyn Maycumber"
+        },
+        "slug": {
+          "en-US": "allyn-maycumber"
+        },
+        "body": {
+          "en-US": "![AllynMaycumber](//images.ctfassets.net/xkm3wy5bii5q/289nVmUqKsQtI7Iy2lUXIu/b76e3cd02ef843fe16d7cecf379b6526/AllynMaycumber.png)\n\nAllyn’s real estate career with Keller Williams Lake Nona exemplifies his extraordinary expertise.\n\nUpon meeting his wife and real estate partner Pam, he arrived to Orlando Florida expanding his real estate forum to commercial leasing, investment portfolio purchases for corporations that included the investment evaluation of marinas, mobile #homes parks, and multi family complexes.\n\nIn 1996, his residential expertise began to flourish, and grow which ultimately paved the strong and powerful foundation for his stellar performance in the now world-renowned area of Lake Nona’s #Medical City\n\nThe Orlando Board of Realtors recently honored Allyn in two major facets within the real estate world ñ ranking in the top tier of 100 Central Florida Realtors and Most Positive Influential People.\n\n## Professional\n\nAs a broker-associate of Keller Williams Realty in the Lake Nona Area of Central Florida, Allyn Maycumber has ranked in the top four Realtors year after year in this immediate area and ranked in the top 100 of all Central Florida Realtors.Veterans Administration building\n\nHis real expertise is vast  International Broker Designee, Luxury Home Market Expert, Distressed Property Expert (CDPE), and a member of the National Association of Realtors. Additionally, his current community designations include Chairman of Managers and Board of Director of Lake Nona Jr. Lions.\n\nMastering a real estate career on multiple levels from commercial to investment to residential takes a multiple collaboration of experience and education. He is a graduate of Southern Methodist University in Dallas, Texas.\n\n## Certifications and Recognitions\n* Lake Nona YMCA Chairman of Managers 2009-2010\n* Member of the National Association of Realtors\n* Licensed Real Estate Broker Associate 23 years\n* National Association of Realtors\n* Orlando Association of Realtors Ethics Board Member\n* Certified Property Distressed Expert (CDPE)\n* International Property Specialist Designation\n* Area Representative voted ñ Northlake Park at Lake Nona\n* Publisher of The Lakes News community newspaper\n* Security Task Force Parent Committee ñ Lake Nona Middle and High School\n\n\n##### Allyn can be reached at <mailto:Allyn@Maycumber.com> or [407-251-1314](tel:407-251-1314)."
+        },
+        "about": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3yqaKvipjJ1PU381cYCKnO",
+        "type": "Entry",
+        "createdAt": "2019-02-02T21:35:20.713Z",
+        "updatedAt": "2019-02-09T00:55:48.765Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 125,
+        "publishedAt": "2019-02-09T00:55:48.765Z",
+        "firstPublishedAt": "2019-02-02T21:41:04.330Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 126,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Pam Maycumber"
+        },
+        "slug": {
+          "en-US": "pam-maycumber"
+        },
+        "body": {
+          "en-US": "![PamMaycumber](//images.ctfassets.net/xkm3wy5bii5q/5kcTgFd3kXIukn4pAEX8nI/5f5323a7a6defe249d8ef15cc3b1ce31/PamMaycumber.png)\n\nPam is a Certified Residential Broker (CRB) representing the top 2% of Realtors†Nationwide. The path that led this national honors recipient is an interesting one, and a path that has been filled with education, real estate expertise, and a heartfelt inspiration to make a positive impact within her community.\n\nHer real estate career began early at the age of 18 in Central Florida. She was inspired to pursue a career in real estate by her parents, so she graduated from the Institute of Florida Real Estate upon graduation from Winter Park High School in 1982, and prior to her studies at Southern Methodist University in Dallas, Texas. There she studied Psychology, Business and Real Estate and graduated in 1986, then immediately acquired her Texas real estate license. Upon her return into Winter Park Florida she purchased a luxury real estate company and led her team of agents to their success. Her foundation has proven to be an absolute critical combination for helping clients in the present day economy. Balancing the knowledge of real estate expertise, the art of negotiations, and the power of compassion have proven to be a wonderful recipe for success.\n\n## Community Involvement & Corporate Sponsorships\n\n* The YMCA at Lake Nona ñ sponsor of the Youth Scholarship Fund\n* Northlake Park at Lake Nona Parent Volunteer\n* Lake Nona Middle and High School PTS (Parent, Teacher, Student†Advisory)\n* Campus Crusade for Christ 5k sponsor and participant\n* Multiple Scoliosis Road Cycle participant\n* University of Central Florida College of Medicine Aesculapian Society\n* Burnham Medical Research Fund Raiser Participant\n* Co-owner & Publisher of†The Lakes News†providing readership to the†Lake Nona corridor\n\n## Career Highlights & Honors\n\n* Broker Associate of Keller Williams Realty Advantage III\n* Certified Residential Broker (CRB) representing 2% of Realtors Nationwide\n* Past Owner and Broker of a prominent real estate firm in Winter Park registered in the book of Whoís Who In Real Estate for five consecutive years under her leadership.\n* Owner of ACI Referral Inc a National Real Estate referral based company in coordination with her real estate brokerage.\n* Recipient of the Orlando Business Journalís ì40 Under 40î Award honoring Central Florida rising stars.\n* Orlando Chamber of Commerce award winner for increasing company production for over two years, at levels over 30 percent or more.\n* Orlandos Women In History notoriety in the Orlando Magazine\n* Board Member of the Orlando Womens Chamber of Commerce\n* Board Member of Central Florida Better Business Bureau\n* Board of Director for the Red & White Charity event, which benefited the Buoniconnti Fund to cure paralysis, Morning Star School, Boggy Creek Camp and more.\n* Volunteer Chair of the Relay for Life at Lake Nona benefiting the American Cancer Society.\n* Top 100 Realtors Award Orlando 2010, 2011, 2012\n\n##### Pam can be reached at <mailto:Pam@Maycumber.com> or [407-251-1314](tel:407-251-1314)."
+        },
+        "about": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3TDjpY5h6RAxPlkjb4KVSA",
+        "type": "Entry",
+        "createdAt": "2019-02-06T05:20:34.767Z",
+        "updatedAt": "2019-02-06T05:57:13.681Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 277,
+        "publishedAt": "2019-02-06T05:57:13.681Z",
+        "firstPublishedAt": "2019-02-06T05:29:51.621Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 278,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Buy With Us"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5kSEUZvnjrCR2myJAbeqqp"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "buy-with-us"
+        },
+        "body": {
+          "en-US": "## Advice From the Best\n\n### Tips For Buyers\n\n* Avoiding Financial Stress\n* Build a Plan of Action and Get Ready\n*  Finding the Right Seller\n* Getting a Legitimate Lender and Getting Pre-Approved\n* Hot, Normal, and Cold Markets\n* Importance of Inspection\n* Is Buying a Home Still a Smart Plan\n* Thinking About Buying a Foreclosure\n* Use a Buyer’s Agent\n* Why You Should Not Make Any Major Credit Purchases\n\n### Homeowner Information\n* Common Ways of Holding Title\n* Condominium and PUD Ownership\n* Environmental Issues\n* Lead Poisoning\n* Living Trusts\n* Mechanics Liens\n* Mello-Roos\n* Radon\n* Underground Heating Oil Tanks\n* Understanding Foreclosures\n\n### Title and Escrow\n* Closing and Title Costs\n* Creative Financing\n* Required Reporting to the IRS\n* Statements of Information\n* The Functions of an Escrow\n* Title Insurance – Where Does Your Dollar Go?\n* Title Insurance Requirements for Insuring Trusts\n* Title Insurance When Refinancing Your Loan\n* Understanding Preliminary Reports\n* Understanding Title Insurance\n* Why Do You Need Title Insurance"
+        },
+        "metaDescription": {
+          "en-US": "Important tips when buying a home. Get advice from the finest real estate agents in the Lake Nona area."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "yxUbaNrwzi3CAYdl3UiFF",
+        "type": "Entry",
+        "createdAt": "2019-02-06T05:30:00.127Z",
+        "updatedAt": "2019-02-06T05:56:59.233Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 413,
+        "publishedAt": "2019-02-06T05:56:59.233Z",
+        "firstPublishedAt": "2019-02-06T05:37:45.929Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 414,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Sell With Us"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7LTdlUxWthyBGINMFyJKVD"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "sell-with-us"
+        },
+        "body": {
+          "en-US": "## List Your Home With Us!\n\n* Do you need to sell your house fast?\n* Live in the Lake Nona area and need to sell your home?\n\n### You've found the right realtor!\n\n## The Lake Nona Area\n\nLake Nona is located in the fastest growing area in East Orlando, Florida minutes from the upcoming “Medical City” and Orlando International Airport. Medical City includes Sanford-Burnham Institute, VA Hospital, UCF College of Medicine, Nemours Children’s Hospital, MD Anderson Cancer Center, and more world-class facilities that promise a huge positive local economic impact. With the convenience to the Orlando International Airport, and major roads this location allows easy access throughout Central Florida, area attractions, and the Atlantic beaches.\n\n### Tips For Sellers\n\n* Considering Offers\n* Finding the Right Agent\n* Getting the Highest Price in the Shortest Time\n* Insist on a Home Inspection\n* Know Why You are Selling\n* Making a Good First Impression\n* Plan of Action\n* Setting the Price\n* What is a Short Sale Anyway"
+        },
+        "metaDescription": {
+          "en-US": "Sell your home with the Maycumber reality team in Lake Nona. We'll make sure that you get the most out of your home selling experience with from the top Lake Nona reality team."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "2RiYuYyXn7akhBYw7OyEpv",
+        "type": "Entry",
+        "createdAt": "2019-02-07T19:14:38.213Z",
+        "updatedAt": "2019-02-09T00:53:41.106Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 147,
+        "publishedAt": "2019-02-09T00:53:41.106Z",
+        "firstPublishedAt": "2019-02-07T19:19:14.745Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 148,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Nona Crest Lake Nona"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3ErsfqKcLnH77kOcqqfoAL"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "nona-crest-lake-nona"
+        },
+        "body": {
+          "en-US": "## Nona Crest Neighborhood – Lake Nona\n\n__NonaCrest is a beautifully gated community__ directly across the street from Lake Nona Golf and Country Club in Lake Nona. NonaCrest residents enjoy a community pool complex with cabana style clubhouse and sports park with playground.  Florida ponds and conservation areas surround the NonaCrest neighborhood. The NonaCrest homeowners association maintains an active community website at NonaCrest.com.  This allows residents to post and view classified ad listings, access community documents, view upcoming HOA meetings, and view upcoming neighborhood and area events. It also features all pavers throughout the community on sidewalks and driveways giving it a classical feeling.\n\n__The Nona Crest Neighborhood is Located__ – on Narcoossee road, directly across from the main entrance to Lake Nona Golf and Country Club.  It is convenient to both Hwy 417 and 528 for commuters and only 10 minutes to Orlando International Airport for business travelers.  Looking for weekend fun?  NonaCrest is only 35 min to the Cocoa Beach and 30 min to the Orlando attractions areas.\n\n \n\n__Nona Crest is a__ – fully developed and built out neighborhood.  The neighborhood was built by Beazer Homes which designed two levels of home styles.  The larger style offered 3 car garages many of which backed up to water or conservation area.\n\n### Where is Nona Crest in Lake Nona?\n\nNona Crest is just 10 minutes from the Orlando International Airport, and located directly across the street from the Lake Nona Golf & Country Club and the Lake Nona Village Center. You are effectively in the heart of the area at this location."
+        },
+        "metaDescription": {
+          "en-US": "The Nona Crest in Lake Nona community is one of the best neighbourhoods to live in Lake Nona. Contact us today to find out more about living in Lake Nona and the many communities it offers."
+        },
+        "community": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "39u2dI3bv6Wktl8Xx7SWIF",
+        "type": "Entry",
+        "createdAt": "2019-02-07T19:19:40.852Z",
+        "updatedAt": "2019-02-10T20:18:29.794Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 285,
+        "publishedAt": "2019-02-10T20:18:29.794Z",
+        "firstPublishedAt": "2019-02-07T19:25:34.047Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 286,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Northlake Park At Lake Nona"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2ajEnZGS9rJauTc5kvbscl"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "northlake-park-at-lake-nona"
+        },
+        "body": {
+          "en-US": "## Northlake Park Neighborhood – Lake Nona\n\n__Residents of Northlake Park are an active group.__  Many of the community events take place in or around the City of Orlando Park which is home to sports fields, a YMCA and Northlake Elementary School. An average weekend may include a movie on the green, a morning sprint with the local running club, a social night with your card group tennis with a friend or holiday community event. Most afternoons you will find owners walking their pets at the dog park, kids biking to over bridged community entryway to the yogurt shop in Lake Nona village while the adults enjoy a glass of wine at the Winehouse or Dinner and cocktails at Nona Blue next door. The Northlake Park HOA website keeps residents up to date with current events.\n\n### Where is Northlake Park in Lake Nona?\n\n__The Northlake Park Neighborhood is Located__ off Narcoossee Road just north of the Lake Nona Golf and Country Club and East of the Orlando International Airport.  It is also accessible by Dowden Road which connects with Narcoossee to provide quick access to both the 417 and 529. View a Google Map of the Northlake Park.\n\n### Let’s All Go to the Y.M.C.A!\n__The state of the art YMCA Family Center__ in Northlake Park offers family friend heath programs for all ages and features an outdoor pool, aerobics room, spinning studio, and gymnasium. Complimentary child care is provided and all group exercise classes and workout clubs are included with the membership. Sharing space with Northpark Elementary and in the center of a city park that includes basketball and tennis courts, it is the hub of the Northlake Park community.\n\n\n\n### Available Homes in Northlake Park\n\n__Northlake Park Homes Include__ – 4 distinct neighborhood areas within the 500 acre Northlake Park ranging from executive level apartments neo-traditional style single family homes.  Northlake Park is fully developed, however there is still new construction in the Water’s Edge section which is a separate gated community in the back of Northlake Park.  The majority of the homes within Northlake Park were built in the early 2000’s."
+        },
+        "metaDescription": {
+          "en-US": "The Northlake Park community in Lake Nona is one of the top places to live. Enjoy fantastic amenities such as the Lake Nona YMCA, beautiful soccer fields, and a vibrant friendly neighbourhood. Reach out to us today to explore all that the Lake Nona community has to offer. "
+        },
+        "community": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "6NoV9HEU3npqElNVKH4PFT",
+        "type": "Entry",
+        "createdAt": "2019-02-08T23:32:25.540Z",
+        "updatedAt": "2019-02-08T23:47:25.104Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 223,
+        "publishedAt": "2019-02-08T23:47:25.104Z",
+        "firstPublishedAt": "2019-02-08T23:47:25.104Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 224,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lake Nona Golf And Country Club"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "o8hZxTRr8D8voGyVJV0bM"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "lake-nona-golf-and-country-club"
+        },
+        "body": {
+          "en-US": "## Living in Lake Nona Golf & Country Club\n\n__For over 25 years, the Lake Nona Golf & Country club__ has provided its residents with exceptional, #luxury living along with a social calendar full of recreational events, celebrations and entertainment options.  The Lake Nona Golf & Country Club is built amidst a trio of beautiful Florida lakes offering freshwater fishing and boating opportunities on Lake Nona.\n\n__The main attraction inside the gates at the Lake Nona Golf & Country Club__ is the Tom Fazio-designed championship golf course.  This world-ranked golf course has been a regular host of the PGA TOUR-sanctioned Tavistock Cup.  In addition, Lake Nona Golf & Country club features a state of the art fitness center, a guest lodge, community pool, tennis courts and year round children’s programs.\n\n### Where is Lake Nona Golf & Country Club in Lake Nona?\n\n__The Lake Nona Golf & Country Club is Located__ – Off Narcoossee Road approx 3 miles from the 528 Beachline Expressway.  Just outside the manned gates of this private community are numerous parks and trails, easy access to roads and expressways of Central Florida, and the Orlando International Airport is just minutes away for jet setters.  Forthcoming retail and entertainment choices in the new Medical City will provide a multitude of activities and a cluster of new hospitals, universities and research institutions will set new benchmarks in medical education, patient care and scientific research.  View a Google Map of the Lake Nona Golf and Country Club.\n\n### Available Homes in Lake Nona Golf & Country Club\n\n__Lake Nona Golf & Country Club Homes__ – are all custom built homes. There are homes built on spec for those looking for a new home and a quick move in.  There are also vacant lots on which to build including lake front lots as well as outstanding resale homes.  Incentives are available for social and golf memberships.  Contact us for details."
+        },
+        "metaDescription": {
+          "en-US": "The Lake Nona Golf and Country club is one of the premier communities in Lake Nona. The Golf and Country club of Lake Nona has a fabulous golf course and other superb amenities that offer the highest quality of living."
+        },
+        "community": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "7fqUYIh05KsWZQQoONzogi",
+        "type": "Entry",
+        "createdAt": "2019-02-08T23:48:09.062Z",
+        "updatedAt": "2019-02-08T23:56:55.925Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 300,
+        "publishedAt": "2019-02-08T23:56:55.925Z",
+        "firstPublishedAt": "2019-02-08T23:56:55.925Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 301,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Village Walk At Lake Nona"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1EyQyyqi0QLCftgLlpnZgw"
+            }
+          }
+        },
+        "slug": {
+          "en-US": "village-walk-at-lake-nona"
+        },
+        "body": {
+          "en-US": "## Village Walk Neighborhood – Lake Nona\n\n__Village Walk in Lake Nona__ is a master planned community whose residents enjoy a Florida resort lifestyle.  This entire gated community is designed as a walking community where each of the villages is connected by bridges and walking-biking paths. There are actually 6 miles of lighted walking trails.  Each of these trails leads to the heart of the community, the waterfront village center.  Most of the homes in Village Walk back to water.village walk community center and pool complex\nThe village center offers a bounty of amenities for its residents.  These include heated resort style swimming pool, lap pool, tennis courts, basketball courts, tot lot play area, a fully equipped fitness center, ballroom, library, restaurant, and even a gas station!  A 24 hour gate attendant provides security and a full time activities director plans events and activities for residents of all ages.\n\n### Where is Village Walk in Lake Nona?\n\n__The Village Walk Neighborhood is Located__ – on Lake Nona Blvd just north of medical city.  Perfectly situated between toll road 417 and Narcoossee road, it is convenient to the restaurants and retail areas of Lake Nona and the hospitals and schools in Medical city as well as the roads that lead to all parts of greater Orlando.  Village Walk is located approx 10 min from the Orlando International Airport, 25 minutes from downtown Orlando and 25 minutes from Disney and the attractions areas. VillageWalk is also directly across from the new USTA Training Facility.  View a Google Map of Village Walk in Lake Nona.\n\n### Available Homes in Village Walk\n__Village Walk Homes were originally built by__ – DiVosta Homes which was purchased by Pulte Homes.  Pulte Homes is now the sole builder in VillageWalk which is almost completely built out.  New constructions is now being built in the Enclave at VillageWalk which is across the street from the existing VillageWalk.. The exterior of each of the Mediterranean style homes are beautifully landscaped and feature long lasting barrel tile roofs and low maintenance stucco exteriors. Many homes in Village Walk back up to the water as many of the streets and neighborhoods are separated by canals and waterways. Homeowners also benefit from alarm system monitoring, cable television service and high speed internet all of which are included as part of your homeowners association.\n\n### Award Winner\nIn 2007, Village Walk was awarded the Parade of Homes community category Grand award, beating out five other communities recognized in this distinctive category"
+        },
+        "metaDescription": {
+          "en-US": "Village Walk at Lake Nona is another great neighbourhood in the Lake Nona area. Located near a medical city and with great new amenities such as a state of the art tennis facility, it is easy to see why so many are flocking to call this place there new home."
+        },
+        "community": {
+          "en-US": true
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "1tJwdBzyiP3TcjrLRCLFI6",
+        "type": "Entry",
+        "createdAt": "2019-02-08T23:57:16.680Z",
+        "updatedAt": "2019-02-09T00:34:45.454Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 51,
+        "publishedAt": "2019-02-09T00:34:45.454Z",
+        "firstPublishedAt": "2019-02-09T00:11:24.000Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 52,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Generation Z Needs to Start Saving $304 a Month Now to Buy a Home By Age 30"
+        },
+        "slug": {
+          "en-US": "generation-z-needs-to-start-saving-now"
+        },
+        "publishDate": {
+          "en-US": "2019-02-08"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4phg1icS3xZW5ayesuQux6"
+            }
+          }
+        },
+        "body": {
+          "en-US": "SANTA CLARA, Calif., Jan. 31, 2019 /PRNewswire/ -- Nearly 80 percent of Generation Z wants to own a home before age 30, and a new analysis released today by realtor.com®, The Home of Home Search℠, shows they will need to save $304 every month for the next 12 years to buy with a 10 percent down payment plus closing costs on a median priced home. According to the analysis, the median priced home in the U.S. is projected to cost $386,310 in 2031, when today's 18-year-old members of Generation Z turn 30.\nThe analysis, which includes a 13-year forecast for median home prices in top 100 metros and different down payment savings plans, projects Generation Z will need to save the most to purchase a home in San Jose, Calif. where they will need to save $1,962 per month. The next most expensive locale is San Francisco ($1,439/mo.) followed by Los Angeles($979/mo.), Honolulu ($946/mo.), and Oxnard, Calif. ($877/mo.). According to realtor.com®'s analysis of Optimal Blue mortgage data, in 2018 the typical under-30 home buyer used a seven percent down payment to successfully complete their home purchase. On average, in the top 10 most expensive metros, members of Generation Z will need to save an average of $948 a month, starting on their 18th birthday, to afford a 10 percent down payment and typical closing costs by the time they turn 30 years old.\n\nThe median priced home in 2019 is expected to cost $265,000, but over the course of the next 12 years, the price is expected to increase nearly 50 percent, specifically another 46 percent to $386,310. This assumes prices grow at a very modest 3.2 percent per year over the next 12 years.\n\n\"Choosing to live in one of the U.S.'s larger and more expensive metros, especially on the West Coast, is going to make homeownership a difficult task, but that doesn't mean that Gen Z should give up on their dreams,\" said Danielle Hale, realtor.com®'s chief economist. \"The most important thing they can do is start saving as much as possible early on and let compound interest do the heavy lifting for them. They may also want to consider more affordable areas or different down payment amounts. Some widely available programs allow down payments as low as 3 percent, but a lower down payment can mean higher ongoing monthly costs. As with most decisions, there are pros and cons and a buyer needs to think these through to determine what's best for them.\"\n\n### Midwest and South offer opportunities for an easier savings plan\nWhile the analysis reveals potentially daunting West Coast future home prices and monthly savings amounts, Generation Z can look to the Midwest and South for more affordable housing options. Youngstown, Ohio, topped the list of the most affordable metros, where Generation Z would only have to save $108 per month. It was followed by McAllen, Texas ($111/mo.), Toledo, Ohio ($141/mo.), Wichita, Kan. ($154/mo.), and Little Rock, Ark. ($156/mo.).\n\nWith an average median home price of $191,381 in 2031 for the top 10 most affordable metros, an 18-year-old member of Generation Z will need to save an average of $150 a month, starting on their 18th birthday, to afford a 10 percent down payment by the time they turn 30. That comes out to saving $798 a month less than the average monthly saving required for the top 10 most expensive metros.\n### 20 percent down payments paint a different picture\n\nWhile 10 percent down or less is far more common among first-time and younger home buyers, some members of Generation Z may want to use a 20 percent down payment to qualify for a lower mortgage rate and have a much lower monthly payment, but that might not be feasible in the nation's most expensive metros. On average, for the 10 most expensive metros in the U.S., Generation Z will need to save $1,645 a month for a 20 percent down payment and closing costs. That is $697 more every month than if they are aiming to put 10 percent down. While 20 percent has historically been the benchmark, this isn't true for first time homebuyers, and Generation Z should consider varying levels of down payments when planning to purchase a home, especially in higher cost metros in the U.S.\n\n\n\n### Methodology: \nThis analysis assumed an 18-year-old member of Generation Z started saving on his or her birthday, contributing the exact amount every month into a savings account with a fixed three percent annual return, compounded monthly. They will make their home purchase in 2031 on their 30th birthday, after making exactly 144 deposits over exactly 12 years. The calculated savings amount required includes money for a downpayment and typical closing costs of about 3.6 percent for first-time home buyers. Forecast median home price data comes from Moody's Analytics (economy.com).\n\n### About realtor.com® \nRealtor.com®, The Home of Home Search℠, offers an extensive inventory of for-sale and rental listings, and access to information, tools and professional expertise that help people move confidently through every step of their home journey. It pioneered the world of digital real estate 20 years ago, and today is the trusted resource for home buyers, sellers and dreamers by making all things home simple, efficient and enjoyable. Realtor.com® is operated by News Corp [NASDAQ: NWS, NWSA] [ASX: NWS, NWSLV] subsidiary Move, Inc. under a perpetual license from the National Association of REALTORS®. For more information, visit realtor.com®."
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "14sXRMEWKVQVSDAFrt5MCq"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3lYE0J2XKB4KnGLoW18L2z"
+              }
+            }
+          ]
+        },
+        "metaDescription": {
+          "en-US": "The Home of Home Search℠ shows they will need to save $304 every month for the next 12 years to buy with a 10 percent down payment plus closing costs on a median-priced home. According to the analysis, the median-priced home in the U.S."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "14sXRMEWKVQVSDAFrt5MCq",
+        "type": "Entry",
+        "createdAt": "2019-02-09T00:08:07.128Z",
+        "updatedAt": "2019-02-09T00:08:39.021Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 28,
+        "publishedAt": "2019-02-09T00:08:39.021Z",
+        "firstPublishedAt": "2019-02-09T00:08:39.021Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 29,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "tag"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Saving For A Home"
+        },
+        "slug": {
+          "en-US": "saving-for-a-home"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3lYE0J2XKB4KnGLoW18L2z",
+        "type": "Entry",
+        "createdAt": "2019-02-09T00:08:47.403Z",
+        "updatedAt": "2019-02-09T00:09:13.858Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 29,
+        "publishedAt": "2019-02-09T00:09:13.858Z",
+        "firstPublishedAt": "2019-02-09T00:09:13.857Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 30,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "tag"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Real Estate Market"
+        },
+        "slug": {
+          "en-US": "real-estate-market"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "5VX7HFXqaLx52J8cf6Wdvu",
+        "type": "Entry",
+        "createdAt": "2019-02-09T00:14:46.061Z",
+        "updatedAt": "2019-02-09T03:12:56.737Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 52,
+        "publishedAt": "2019-02-09T03:12:56.737Z",
+        "firstPublishedAt": "2019-02-09T00:18:25.805Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 12,
+        "version": 53,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "listing"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "12727 Broleman"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2MDIYnd6py01DlMAsGV45q"
+            }
+          }
+        },
+        "publishDate": {
+          "en-US": "2019-02-08"
+        },
+        "slug": {
+          "en-US": "12727-broleman"
+        },
+        "beds": {
+          "en-US": 4
+        },
+        "baths": {
+          "en-US": 2.5
+        },
+        "price": {
+          "en-US": 0
+        },
+        "body": {
+          "en-US": "Gorgeous Lakefront estate on Lake Hart in the Lake Nona area offering 4/2.5 with spectacular lake view of Lake Hart and your private boat dock with lift. This home was a custom David Weekly home and sits on a private street with no through traffic.\n"
+        },
+        "metaDescription": {
+          "en-US": "Gorgeous Lakefront estate on Lake Hart in the Lake Nona area offering 4/2.5 with spectacular lake view of Lake Hart and your private boat dock with lift. This home was a custom David Weekly home and sits on a private street with no through traffic."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "6vgCFme5GYFZZff5HWDqYE",
+        "type": "Entry",
+        "createdAt": "2019-02-09T00:18:30.713Z",
+        "updatedAt": "2019-02-18T14:16:17.164Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 64,
+        "publishedAt": "2019-02-18T14:16:17.164Z",
+        "firstPublishedAt": "2019-02-09T00:19:26.068Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 65,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "listing"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lake Nona Estates Home"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4moVIAme5PXLZw071kzqbq"
+            }
+          }
+        },
+        "publishDate": {
+          "en-US": "2019-02-08"
+        },
+        "slug": {
+          "en-US": "lake-nona-estates-home"
+        },
+        "beds": {
+          "en-US": 4
+        },
+        "baths": {
+          "en-US": 3.5
+        },
+        "price": {
+          "en-US": 0
+        },
+        "body": {
+          "en-US": "Looking for one of the best priced homes in the Lake Nona Golf and Country Club you found it.Enjoy the Tom Fazio designed championship golf course and all the amenities that go along with this beautiful Club and begin your next chapter in Lake Nona in this Gorgeous home offering 4 bedrooms 3.5 bathrooms, and private den  3 car garage fully remodeled kitchen and bathrooms overlooking peaceful pond and views of the #2 Fairway. This home offers circular driveway on private street just steps to Magnificent Georgian Clubhouse and lodge, Bath and Racquet club and Lakefront dock. Enjoy elegant dining and minutes to exquisite eateries all located in the growing Lake Nona community offering proximity to Lake Nona Medical City, Drive Shack, UCF Medical College, Nemours Children’s Hospital and much more! \n"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "6ndRz6deWQf4ijTw0i87EZ",
+        "type": "Entry",
+        "createdAt": "2019-02-10T16:51:31.670Z",
+        "updatedAt": "2019-02-10T16:56:00.481Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 28,
+        "publishedAt": "2019-02-10T16:56:00.481Z",
+        "firstPublishedAt": "2019-02-10T16:56:00.481Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 29,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Do all Students Graduate on time?"
+        },
+        "slug": {
+          "en-US": "do-all-students-graduate-on-time"
+        },
+        "publishDate": {
+          "en-US": "2019-02-11"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "63jFTFDTfeErw3ttsednW9"
+            }
+          }
+        },
+        "body": {
+          "en-US": "You walk off stage firmly holding your high school diploma in your hands. You have dreamed of this moment your whole adolescent life. Now the next step of your dream is about to be fulfilled, attending college. Perhaps you have fantasied that it will be a time of non-stop partying or that your college years would prove to the best of your life. While for some that may be true, for most us these misconceptions are added to the ever-growing list of college myths. Here are 4 college myths that you still believe.\n\nMost Students Graduate In 4 Years\n\nAs opposed to popular belief, a majority of college students do not graduate on time. According to completecollege.org, “A majority of public colleges graduate less than 50 percent of their full-time students in four years.”\n\nIn fact, in the United States only 19% of full time non-flagship students graduate with their 4-year bachelor’s degree on time.\n\nWhile you should make it a goal to finish on time, it is not mandatory or even commonplace.\n\nCommunity College Is Viewed as Less Than Universities\n\nFor some students, the lower tuition of community colleges is appealing but they fear that they are going to get a second-rate education if they attend. We tend to link price with quality and while in some cases that is reasonable, in the case of post-secondary education it is not.\n\n“Many people have misconceptions about community colleges. But what they might not realize is that you can finish your first two years of your college education at a community college – at half the cost of a state university,” said Dr. Stacey Johnson, president of the East and Winter Park campuses at Valencia College. “You’ll be in smaller classes, get real opportunities to interact and know the professors and we offer the kind of support – through tutoring, math labs, communication labs and other learning supports – that many students could miss in a large university setting.”\n\nYou Will Spend All Your Time Partying\n\nWhen most people think of college they think of wild parties and wild spring breaks on some tropical island. While there is a lot of fun to have while in college, the pressures of passing your classes tend to cut into your party time. That doesn’t mean that you won’t have any fun, in fact some colleges and universities are known for their parties, it just means that it most likely won’t be your focus once the term starts.\n\n“College is all about work. In a classroom, you may sit among people of various backgrounds and ages but the goal of everyone there is to succeed,” said former college student, Mariah Martinez. “College is not just a social gathering, it’s an arena to work toward your future.”\n\nA high GPA equals finding a job in your field\n\nWhile having a high GPA makes you a better student and potential job candidate, some fields prefer experience over grades.\n\nIn a BBC survey of 2,000 employers, 63% noted relevant work experience to be critical or significant while only 42% looked for academic qualifications.\n\nAlthough receiving good grades is essential, moving some focus from studying to pursue an internship might be better for you in the long run, depending on which career field you are interested in.\n\nNow you know the truth behind some of college’s most popular misconceptions. "
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "GNFvvqlI8QrDA5y6OGblc",
+        "type": "Entry",
+        "createdAt": "2019-02-12T15:16:33.567Z",
+        "updatedAt": "2019-02-12T15:24:31.067Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 115,
+        "publishedAt": "2019-02-12T15:24:31.067Z",
+        "firstPublishedAt": "2019-02-12T15:24:31.067Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 116,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Housing Price Index and look forward"
+        },
+        "slug": {
+          "en-US": "housing-price-index-and-look-forward"
+        },
+        "publishDate": {
+          "en-US": "2019-02-12"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2HhTbaJReBljRnw4wf6OsN"
+            }
+          }
+        },
+        "body": {
+          "en-US": "\n\n### December 2018 National Home Prices\n[Home prices nationwide](https://WWW.WeKnowOrlando.com), including distressed sales, increased year over year by 4.7 percent in December 2018 compared with December 2017 and increased month over month by 0.1 percent in December 2018 compared with November 2018 (revisions with public records data are standard, and to ensure accuracy, CoreLogic incorporates the newly released public data to provide updated results).\n\nForecast Prices Nationally\nThe CoreLogic HPI Forecast indicates that home prices will increase by 4.6 percent on a year-over-year basis from December 2018 to December 2019. Comparing the annual average HPI and HPI forecast for 2018 and 2019, average price growth is forecasted to slow from 5.8 percent to 3.4 percent. On a month-over-month basis, home prices are expected to decrease by 1 percent from December 2018 to January 2019.\n\nThe CoreLogic HPI Forecast is a projection of home prices using the CoreLogic HPI and other economic variables. Values are derived from state-level forecasts by weighting indices according to the number of owner-occupied households for each state."
+        },
+        "metaDescription": {
+          "en-US": "Home prices, projections,Corelogic,Economic,prices,home sales"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "1RiR1buscu5xzhHAJBtKVt",
+        "type": "Entry",
+        "createdAt": "2019-02-18T14:17:32.436Z",
+        "updatedAt": "2019-02-19T14:20:41.692Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 126,
+        "publishedAt": "2019-02-19T14:20:41.692Z",
+        "firstPublishedAt": "2019-02-19T14:20:41.692Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 127,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lake Nona Golf and Country Club spectacular listing"
+        },
+        "slug": {
+          "en-US": "lake-nona-golf-and-country-club-spectacular-listing"
+        },
+        "publishDate": {
+          "en-US": "2019-02-19"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "60wXJW4Wc3FJTzpYjRzJjr"
+            }
+          }
+        },
+        "body": {
+          "en-US": "Lake Nona Golf and Country Club spectacular listing\n\nGolf\n\nHomes\n\nReal Estate\n\nSpectacular \n\nListing\n\nNew\n\n"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "5eItoEi5JCT2MmYZCQbZGT",
+        "type": "Entry",
+        "createdAt": "2019-02-19T14:20:55.167Z",
+        "updatedAt": "2019-03-18T13:14:17.883Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 42,
+        "publishedAt": "2019-03-18T13:14:17.883Z",
+        "firstPublishedAt": "2019-03-18T13:14:17.883Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 43,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": " best time to list your home for sale in Orlando"
+        },
+        "slug": {
+          "en-US": "Best-time-to-list-your-home-for-sale-in-orlando"
+        },
+        "publishDate": {
+          "en-US": "2019-02-20"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1L755KUZy9N3INy09vAGY6"
+            }
+          }
+        },
+        "body": {
+          "en-US": "Did you know that listing your home in early May could earn you $1,600 more?\n\nThat's the god word, according to a new Zillow study that concludes sellers looking to maximize profits should list their homes for sale in the first two weeks of May. The Zillow analysis finds that those homes not only sell for a $1,600 premium, but also six days faster.\n\nThe May sales window is the best opportunity in 19 of the 35 largest metros, but here in Orlando, your best window for sales is June 1-15, with the ideal listing day of the week on Friday.\n\nThe biggest premium for timing a listing is in Minneapolis, where homes listed in the first half of May sold for a 1.8% premium. That translates to an extra $4,900 on the sale. Sellers in Austin and Miami, on the other hand, saw the smallest sales premiums. In those markets, listing during the “magic window” gained sellers a 0.5% premium — about $1,400."
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "ydAApsTAQ3RcYFmsFCNUI"
+              }
+            }
+          ]
+        },
+        "metaDescription": {
+          "en-US": "Sellers, Timing Market premium, Zillow,sales"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "ydAApsTAQ3RcYFmsFCNUI",
+        "type": "Entry",
+        "createdAt": "2019-02-19T14:22:41.859Z",
+        "updatedAt": "2019-02-19T14:24:05.245Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 10,
+        "publishedAt": "2019-02-19T14:24:05.245Z",
+        "firstPublishedAt": "2019-02-19T14:24:05.245Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 11,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "tag"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Market Timing"
+        },
+        "slug": {
+          "en-US": "market-timing"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3zQYkvrc7wA786F50HNlAt",
+        "type": "Entry",
+        "createdAt": "2019-02-20T15:36:26.671Z",
+        "updatedAt": "2019-03-18T02:59:42.118Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 53,
+        "publishedAt": "2019-03-18T02:59:42.117Z",
+        "firstPublishedAt": "2019-02-20T15:45:43.507Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 54,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "https://orlandoinformer.com/blog/universal-beijing-resort-starts-construction/"
+        },
+        "slug": {
+          "en-US": "https-orlandoinformer-com-blog-universal-beijing-resort-starts-construction"
+        },
+        "publishDate": {
+          "en-US": "2019-02-21"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6nhezCVHdWVdoWZSzkbfJb"
+            }
+          }
+        },
+        "body": {
+          "en-US": "Combined with the biggest-ever budget and real estate, the possibilities for this exciting theme park are pretty much limitless – something which should not only get any red-blooded theming fan excited, generally, but which also sounds suspiciously similar to the situation here in Orlando, with a brand-new massive chunk of land and construction just beginning on it."
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7KG5dOmEyElUjiDQ7YLQbb"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "7KG5dOmEyElUjiDQ7YLQbb",
+        "type": "Entry",
+        "createdAt": "2019-02-20T15:44:06.572Z",
+        "updatedAt": "2019-03-18T02:59:35.834Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 41,
+        "publishedAt": "2019-03-18T02:59:35.834Z",
+        "firstPublishedAt": "2019-03-18T02:59:35.834Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 42,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "tag"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "universal theme park real estate development "
+        },
+        "slug": {
+          "en-US": "universal-theme-park-real-estate-development"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "33J8lxwcD3TnCbFEsWvcar",
+        "type": "Entry",
+        "createdAt": "2019-02-20T15:47:24.596Z",
+        "updatedAt": "2019-03-18T02:58:55.711Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 267,
+        "publishedAt": "2019-03-18T02:58:55.711Z",
+        "firstPublishedAt": "2019-02-20T15:54:57.357Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 268,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Best Time to head to Disney World!"
+        },
+        "slug": {
+          "en-US": "best-time-to-head-to-disney-world"
+        },
+        "publishDate": {
+          "en-US": "2019-02-22"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5Wi9R4JxL0UPvSdIxial1L"
+            }
+          }
+        },
+        "body": {
+          "en-US": "If you are only able to pick one season to visit us here in Orlando and live out your dreams at Disney World, I think it’s pretty clear that fall is your best bet. With less volume throughout the park, optimal cool weather, and the seasons cheer spread throughout the park there is no more optimal time to live out your fall/winter season in Disney! Each year, Magic Kingdom plays host to absolutly incredible Halloween events in Orlando, and puts on the greatest parade on television. Whether you’re travelling solo as an adult, or toting your entire family along with you, Not-So-Scary has something special for everyone. The characters themselves dress up in Halloween costumes, making their meet-and-greets that much more special. Take advantage this upcoming fall and get the most out of your Disney experience!"
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3BMrjRWT8gDYVZRfKXNDVB"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3BMrjRWT8gDYVZRfKXNDVB",
+        "type": "Entry",
+        "createdAt": "2019-02-20T15:52:31.017Z",
+        "updatedAt": "2019-03-18T02:57:18.242Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2019-03-18T02:57:18.242Z",
+        "firstPublishedAt": "2019-03-18T02:57:18.242Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "tag"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Disney Park Vacation Orlando"
+        },
+        "slug": {
+          "en-US": "disney-park-vacation-orlando"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "zkhFMtKsMGBAzSPqWCnty",
+        "type": "Entry",
+        "createdAt": "2019-03-11T13:12:21.137Z",
+        "updatedAt": "2019-03-11T13:21:22.087Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2019-03-11T13:21:22.087Z",
+        "firstPublishedAt": "2019-03-11T13:21:22.087Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Golf anyone?"
+        },
+        "slug": {
+          "en-US": "golf-anyone"
+        },
+        "publishDate": {
+          "en-US": "2019-03-11"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2nV35UYppbyIYcahdfB8ii"
+            }
+          }
+        },
+        "body": {
+          "en-US": "This Beautiful five-bedroom, four-bath, two-story and elegant Lake Nona home with many upgrades in 24-hour guard-gated Eagle Creek, a premier golf community. The great room and family room have French doors leading to an enormous lanai overlooking a beautiful pool and a large fenced-in backyard, which offers plenty of privacy and peace after a long day. The spacious kitchen features 42-inch cabinets, beautiful granite countertops, stainless steel appliances, a large island and plenty of cabinet/walk-in pantry space. This home includes a large master bedroom upstairs, tray ceilings, dual closets and a large master bath with double vanities, garden tub, and walk-in shower. The flexible fifth room can be used as a large bedroom or media room. The home comes with a three-car garage, paver driveway and barrel tile roof. Amenities include community pools, playground, tennis courts, clubhouse with restaurant and more. This residence provides easy access to Medical City, airport, SR 417, new Publix plaza and amazing schools. The community is located directly across the street from Lake Nona's Medical City entrance and conveniently located minutes from the Orlando International Airport. Easy access to SR 417.!\n\n[virtual-tour-276187-32](//images.ctfassets.net/xkm3wy5bii5q/2nV35UYppbyIYcahdfB8ii/bc8fe0668eb706bfaec3493bc9aa35f1/virtual-tour-276187-32.jpg) ![virtual-tour-276187-08](//images.ctfassets.net/xkm3wy5bii5q/yEQaA5woSO0xK9P0g7mpX/7a28927bc34a7965ba68462a201cc2e1/virtual-tour-276187-08.jpg) ![virtual-tour-276187-13](//images.ctfassets.net/xkm3wy5bii5q/2BIiCDelnYFwdlXlGmWOmA/6130d6a67ae16a230a280adc26b19c49/virtual-tour-276187-13.jpg)"
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6ruSpgA1z7Oj0ahcTGEGxB"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3FToMb5qWaTBMMvOmyOCAN",
+        "type": "Entry",
+        "createdAt": "2019-03-14T13:11:49.895Z",
+        "updatedAt": "2019-03-14T13:18:36.262Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 26,
+        "publishedAt": "2019-03-14T13:18:36.262Z",
+        "firstPublishedAt": "2019-03-14T13:18:36.262Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 27,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Beautiful Family Home!"
+        },
+        "slug": {
+          "en-US": "beautiful-family-home"
+        },
+        "publishDate": {
+          "en-US": "2019-03-14"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4CeWC5EWmFavn6ljI5spx6"
+            }
+          }
+        },
+        "body": {
+          "en-US": "Beautiful family home in the sought after, guard gated community of Village Walk in Lake Nona! This 1 story home greets you with its plush landscape that features beautiful Palm Trees and paved driveway, add the barrel tile roof and the result is stunning curb appeal. Inside it doesn’t disappoint with its sprawling floor plan, upgraded porcelain tile throughout the first floor, lots of windows and natural sunlight, this house is one of a kind. Step out into the backyard and enjoy the breathtaking views of the community's waterway right from the extended screened in deck. This home offers a 3 way split plan you’ll find enough room for the whole family with 3 generous guest bedrooms, two of them sharing a Bath and one bedroom with its own e bath, a spacious laundry room and a Master Bedroom that features a large Walk-In Closet and a master bath with his and her baths, shower and soaking tub. Location is one of its best features, minutes away from Medical City, the new Lake Nona Town Center, the best entertainment and shopping in the area and the best schools as well. The community is packed with amenities from Clubhouse with fitness center, children’s playground, tennis courts, pool, walking and biking trails to gas station and convenience store and much more… This one is a must see!!\n\n[12191 Obelia St Orlando,Florida 32827 - charlesduvall8@gmail.com - Gmail](//downloads.ctfassets.net/xkm3wy5bii5q/7l5d47cc9XJMyZSpUD2kGO/fc709ece98600459879cd50f548c0dbf/12191_Obelia_St_Orlando_Florida_32827_-_charlesduvall8_gmail.com_-_Gmail.webarchive)"
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4PdsFoFCfXqvrhOhTcbyx3"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "1QP8npIurkheRJpMJftMXt",
+        "type": "Entry",
+        "createdAt": "2019-03-22T11:48:31.887Z",
+        "updatedAt": "2019-03-22T11:56:17.424Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 59,
+        "publishedAt": "2019-03-22T11:56:17.424Z",
+        "firstPublishedAt": "2019-03-22T11:56:17.424Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 60,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "post"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Housing Recessions and Recovery"
+        },
+        "slug": {
+          "en-US": "housing-recessions-and-recovery"
+        },
+        "publishDate": {
+          "en-US": "2019-03-22"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5f5NpIFhH54eOlJCE9tG54"
+            }
+          }
+        },
+        "body": {
+          "en-US": "Lately, it seems like the roof of the housing market might cave in. Several of the major housing market indicators have shown much volatility as of late. For instance, the S&P CoreLogic Case-Shiller Home Price Index fell for seven straight months, new home sales dropped a whopping 12 percent at the end of last year, and inventory is starting rise. On top of that, we’re six month’s short of the longest economic expansion. As such, it is understandable why some might think that the housing market and broader cycle is coming to an end. The demographic structure of the United States should continue to support prime-household growth for over the next two decades. Currently, just under 46 percent of the U.S. population is under 35. As this cohort ages and gets their housing-market sea legs, we should expect them to form. The Harvard Joint Center for Housing Studies estimates Millennial households are expected to grow by 32 million over the next twenty years. That’s a lot of new homes that will be needed, regardless of whether they buy or rent. This surge in demand should continue to put upward pressure on the housing market until at least 2040.\nFirst, broad and deep troughs in housing prices is the exception, rather than the rule, during recessions. If we look at the past five recessions, we see that home prices typically weather down turns quite well. For example, home prices grew 6.6 percent during the Dot-Com recession in 2001. And during the 1980 and 1981 recessions, prices grew by 6.1 percent and 3.5 percent, respectively. Second, housing inventory struggles to keep pace with demand. Total single-family inventory, which is the sum of newly-built and used homes, sits at just 15.7 homes per 1,000 household. This is up slightly from the record low of 14.9 set in December 2017. The fact that we’re at historically low inventory is important because it means we’re in a very different supply environment compared to the massive run up in inventory that appeared before the onset of the Great Recession. Today’s low supply environment means that prices are unlikely to fall far, if at all, during the next recession.\n"
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "35Z9Mg8ErHrfBzfujcmwQ3"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "67AMrE3IuAMeWuG08UiyMu",
+        "type": "Asset",
+        "createdAt": "2019-01-27T22:02:56.861Z",
+        "updatedAt": "2019-01-27T22:03:21.396Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-01-27T22:03:21.396Z",
+        "firstPublishedAt": "2019-01-27T22:03:21.396Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "a-walk-in-the-park"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/67AMrE3IuAMeWuG08UiyMu/bdade50466433c413eb6225c41c6137a/a-walk-in-the-park.jpg",
+            "details": {
+              "size": 449263,
+              "image": {
+                "width": 1800,
+                "height": 1201
+              }
+            },
+            "fileName": "a-walk-in-the-park.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "4HcRwRxUkKqxYIRoqSqTrs",
+        "type": "Asset",
+        "createdAt": "2019-01-30T12:19:30.390Z",
+        "updatedAt": "2019-02-10T16:26:57.930Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 74,
+        "publishedAt": "2019-02-10T16:26:57.930Z",
+        "firstPublishedAt": "2019-01-30T12:49:45.338Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 75,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Hero Home Stock Image"
+        },
+        "description": {
+          "en-US": "A stock image used for the home page"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/4HcRwRxUkKqxYIRoqSqTrs/7bdd78843c30d081e7cb642c4597b764/9955_Sweetleaf_St.jpg",
+            "details": {
+              "size": 656976,
+              "image": {
+                "width": 1800,
+                "height": 1200
+              }
+            },
+            "fileName": "9955 Sweetleaf St.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "50aHZrZRLqrFQLFYlHfeBQ",
+        "type": "Asset",
+        "createdAt": "2019-01-30T12:23:12.113Z",
+        "updatedAt": "2019-01-30T12:49:39.691Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 36,
+        "publishedAt": "2019-01-30T12:49:39.691Z",
+        "firstPublishedAt": "2019-01-30T12:49:39.691Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 37,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lake Nona Home"
+        },
+        "description": {
+          "en-US": "A picture of a home for potential hero"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/50aHZrZRLqrFQLFYlHfeBQ/fe87c8b499afe65835117796e6b54212/LakeNonaHome.jpg",
+            "details": {
+              "size": 285333,
+              "image": {
+                "width": 920,
+                "height": 621
+              }
+            },
+            "fileName": "LakeNonaHome.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "60Fh7rjFskYzJHcRhnhQht",
+        "type": "Asset",
+        "createdAt": "2019-01-30T12:48:33.114Z",
+        "updatedAt": "2019-01-30T12:49:11.474Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 25,
+        "publishedAt": "2019-01-30T12:49:11.474Z",
+        "firstPublishedAt": "2019-01-30T12:49:11.474Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 26,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lake Nona over lake"
+        },
+        "description": {
+          "en-US": "An image of lake nona"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/60Fh7rjFskYzJHcRhnhQht/384973d2ebafe78e9c8892af7103d160/LakeNonaImage.jpg",
+            "details": {
+              "size": 720961,
+              "image": {
+                "width": 1100,
+                "height": 500
+              }
+            },
+            "fileName": "LakeNonaImage.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "vjEkMmhirDn3sCtNlbGhO",
+        "type": "Asset",
+        "createdAt": "2019-02-04T15:13:20.067Z",
+        "updatedAt": "2019-02-04T15:13:55.417Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 35,
+        "publishedAt": "2019-02-04T15:13:55.417Z",
+        "firstPublishedAt": "2019-02-04T15:13:55.417Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 36,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Home With For Sale Sign out front"
+        },
+        "description": {
+          "en-US": "An image of a home with a for sale sign"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/vjEkMmhirDn3sCtNlbGhO/80f3af7bcfbf64c28d064dff906af543/pexels-photo-210617.jpeg",
+            "details": {
+              "size": 411156,
+              "image": {
+                "width": 1880,
+                "height": 1259
+              }
+            },
+            "fileName": "pexels-photo-210617.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "38zeZIF0TvdLy2K1H7G48y",
+        "type": "Asset",
+        "createdAt": "2019-02-04T15:35:44.372Z",
+        "updatedAt": "2019-02-10T16:31:13.525Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2019-02-10T16:31:13.525Z",
+        "firstPublishedAt": "2019-02-04T15:36:04.903Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "business-comfort-comfortable-920382"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/38zeZIF0TvdLy2K1H7G48y/09fc305a4a014f6f577c057e2b018df0/Image_for_book.jpg",
+            "details": {
+              "size": 134013,
+              "image": {
+                "width": 960,
+                "height": 960
+              }
+            },
+            "fileName": "Image for book.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "289nVmUqKsQtI7Iy2lUXIu",
+        "type": "Asset",
+        "createdAt": "2019-02-06T05:18:10.214Z",
+        "updatedAt": "2019-02-06T06:01:19.624Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2019-02-06T06:01:19.624Z",
+        "firstPublishedAt": "2019-02-06T05:18:46.994Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "AllynMaycumber"
+        },
+        "description": {
+          "en-US": "Allyn Maycumber of Maycumber and Associates Lake Nona "
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/289nVmUqKsQtI7Iy2lUXIu/b76e3cd02ef843fe16d7cecf379b6526/AllynMaycumber.png",
+            "details": {
+              "size": 228593,
+              "image": {
+                "width": 515,
+                "height": 599
+              }
+            },
+            "fileName": "AllynMaycumber.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "5kSEUZvnjrCR2myJAbeqqp",
+        "type": "Asset",
+        "createdAt": "2019-02-06T05:18:10.316Z",
+        "updatedAt": "2019-02-06T05:18:46.947Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-02-06T05:18:46.947Z",
+        "firstPublishedAt": "2019-02-06T05:18:46.947Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "BuyAHome"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/5kSEUZvnjrCR2myJAbeqqp/d0c8e5cd0451a688996e061010cd0134/BuyAHome.jpeg",
+            "details": {
+              "size": 50928,
+              "image": {
+                "width": 1000,
+                "height": 668
+              }
+            },
+            "fileName": "BuyAHome.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "5f5NpIFhH54eOlJCE9tG54",
+        "type": "Asset",
+        "createdAt": "2019-02-06T05:18:10.691Z",
+        "updatedAt": "2019-02-06T05:18:47.027Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-02-06T05:18:47.027Z",
+        "firstPublishedAt": "2019-02-06T05:18:47.027Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "BuyAHome2"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/5f5NpIFhH54eOlJCE9tG54/2445a7e8de20249d6b1cdd81eba2818c/BuyAHome2.jpeg",
+            "details": {
+              "size": 56656,
+              "image": {
+                "width": 1000,
+                "height": 703
+              }
+            },
+            "fileName": "BuyAHome2.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "7LTdlUxWthyBGINMFyJKVD",
+        "type": "Asset",
+        "createdAt": "2019-02-06T05:18:10.700Z",
+        "updatedAt": "2019-02-06T05:18:47.023Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-02-06T05:18:47.023Z",
+        "firstPublishedAt": "2019-02-06T05:18:47.023Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "SellYourHome"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/7LTdlUxWthyBGINMFyJKVD/2b39443c188a592d5383ce6379a37305/SellYourHome.jpeg",
+            "details": {
+              "size": 61680,
+              "image": {
+                "width": 1000,
+                "height": 668
+              }
+            },
+            "fileName": "SellYourHome.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "5kcTgFd3kXIukn4pAEX8nI",
+        "type": "Asset",
+        "createdAt": "2019-02-06T05:19:12.074Z",
+        "updatedAt": "2019-02-06T06:01:11.020Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 35,
+        "publishedAt": "2019-02-06T06:01:11.020Z",
+        "firstPublishedAt": "2019-02-06T05:19:14.617Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 36,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "PamMaycumber"
+        },
+        "description": {
+          "en-US": "Pam Maycumber of Maycumber and Associates Lake Nona "
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/5kcTgFd3kXIukn4pAEX8nI/5f5323a7a6defe249d8ef15cc3b1ce31/PamMaycumber.png",
+            "details": {
+              "size": 180211,
+              "image": {
+                "width": 501,
+                "height": 584
+              }
+            },
+            "fileName": "PamMaycumber.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "6mc88PkUjmvJAE3mkJniP9",
+        "type": "Asset",
+        "createdAt": "2019-02-07T18:06:01.257Z",
+        "updatedAt": "2019-02-07T18:06:36.687Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2019-02-07T18:06:36.686Z",
+        "firstPublishedAt": "2019-02-07T18:06:36.686Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Brick Wall"
+        },
+        "description": {
+          "en-US": "A brick wall"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/6mc88PkUjmvJAE3mkJniP9/6744a9139ae9364f563c79a33d9384f7/bricks-brickwall-brickwork-276514.jpg",
+            "details": {
+              "size": 4027064,
+              "image": {
+                "width": 3729,
+                "height": 2797
+              }
+            },
+            "fileName": "bricks-brickwall-brickwork-276514.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "3ErsfqKcLnH77kOcqqfoAL",
+        "type": "Asset",
+        "createdAt": "2019-02-07T19:14:57.001Z",
+        "updatedAt": "2019-02-07T19:15:27.198Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 17,
+        "publishedAt": "2019-02-07T19:15:27.198Z",
+        "firstPublishedAt": "2019-02-07T19:15:27.198Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 18,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "NonaCrestLakeNona"
+        },
+        "description": {
+          "en-US": "Nona Crest in Lake Nona"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/3ErsfqKcLnH77kOcqqfoAL/a19b6d66faa1f1fc38d5de0aa5c3a399/NonaCrestLakeNona.jpg",
+            "details": {
+              "size": 55197,
+              "image": {
+                "width": 600,
+                "height": 397
+              }
+            },
+            "fileName": "NonaCrestLakeNona.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "2ajEnZGS9rJauTc5kvbscl",
+        "type": "Asset",
+        "createdAt": "2019-02-07T19:25:02.737Z",
+        "updatedAt": "2019-02-07T19:25:24.385Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2019-02-07T19:25:24.385Z",
+        "firstPublishedAt": "2019-02-07T19:25:24.385Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "NorthLakePark"
+        },
+        "description": {
+          "en-US": "NorthLake Park YMCA"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/2ajEnZGS9rJauTc5kvbscl/2480ec0fafa2bde03ce6c592697175ea/NorthLakePark.jpg",
+            "details": {
+              "size": 77189,
+              "image": {
+                "width": 1210,
+                "height": 423
+              }
+            },
+            "fileName": "NorthLakePark.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "o8hZxTRr8D8voGyVJV0bM",
+        "type": "Asset",
+        "createdAt": "2019-02-08T23:32:45.251Z",
+        "updatedAt": "2019-02-08T23:38:08.057Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 46,
+        "publishedAt": "2019-02-08T23:38:08.057Z",
+        "firstPublishedAt": "2019-02-08T23:38:08.057Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 47,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Golf And Country Club Golf Course"
+        },
+        "description": {
+          "en-US": "This the hero image for the golf and country club"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/o8hZxTRr8D8voGyVJV0bM/f15db2dc9f6ff17b8206738d4e816138/GolfCourseShot.jpg",
+            "details": {
+              "size": 79092,
+              "image": {
+                "width": 810,
+                "height": 533
+              }
+            },
+            "fileName": "GolfCourseShot.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "1EyQyyqi0QLCftgLlpnZgw",
+        "type": "Asset",
+        "createdAt": "2019-02-08T23:50:18.628Z",
+        "updatedAt": "2019-02-08T23:50:51.881Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 35,
+        "publishedAt": "2019-02-08T23:50:51.881Z",
+        "firstPublishedAt": "2019-02-08T23:50:51.881Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 36,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Village Walk Image"
+        },
+        "description": {
+          "en-US": "Image for hero of Village walk in Lake Nona"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/1EyQyyqi0QLCftgLlpnZgw/0d87ace2339a265d39749abd98e736b6/GolfAndCountryClub.jpg",
+            "details": {
+              "size": 94172,
+              "image": {
+                "width": 700,
+                "height": 423
+              }
+            },
+            "fileName": "GolfAndCountryClub.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "4phg1icS3xZW5ayesuQux6",
+        "type": "Asset",
+        "createdAt": "2019-02-09T00:10:26.501Z",
+        "updatedAt": "2019-02-09T00:11:05.650Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2019-02-09T00:11:05.650Z",
+        "firstPublishedAt": "2019-02-09T00:11:05.650Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "cash-cent-child-1246954"
+        },
+        "description": {
+          "en-US": "Saving Money Image"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/4phg1icS3xZW5ayesuQux6/068c67eff4fc6f378ffe55df9850fc81/cash-cent-child-1246954.jpg",
+            "details": {
+              "size": 2702019,
+              "image": {
+                "width": 4000,
+                "height": 2670
+              }
+            },
+            "fileName": "cash-cent-child-1246954.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "2MDIYnd6py01DlMAsGV45q",
+        "type": "Asset",
+        "createdAt": "2019-02-09T01:33:03.999Z",
+        "updatedAt": "2019-02-09T01:33:29.997Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-02-09T01:33:29.997Z",
+        "firstPublishedAt": "2019-02-09T01:33:29.997Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "12727 broleman"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/2MDIYnd6py01DlMAsGV45q/7ea55ed9bae64b79a206d9c09bbb9556/12727_broleman.jpeg",
+            "details": {
+              "size": 135326,
+              "image": {
+                "width": 640,
+                "height": 360
+              }
+            },
+            "fileName": "12727 broleman.jpeg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "1Xf02v4opA3z85qweuUl32",
+        "type": "Asset",
+        "createdAt": "2019-02-09T01:35:14.265Z",
+        "updatedAt": "2019-02-09T01:35:48.707Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2019-02-09T01:35:48.707Z",
+        "firstPublishedAt": "2019-02-09T01:35:48.707Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lake Nona Estates Home"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/1Xf02v4opA3z85qweuUl32/b54c77df514846a596365e15c9c8da22/eyJpbnR5cGUiOiIyIiwidXJsIjoiL01vYmlsZVZpZGVvLzMxMjQwNy8zMTI0MDc0Njk3MDAwMzBfMV9BQS5qcGciLCJ0dyI6IjIyNSIsIndyYXBwZXJ0aXRsZSI6.jpg",
+            "details": {
+              "size": 38268,
+              "image": {
+                "width": 222,
+                "height": 105
+              }
+            },
+            "fileName": "eyJpbnR5cGUiOiIyIiwidXJsIjoiL01vYmlsZVZpZGVvLzMxMjQwNy8zMTI0MDc0Njk3MDAwMzBfMV9BQS5qcGciLCJ0dyI6IjIyNSIsIndyYXBwZXJ0aXRsZSI6IkNsaWNrIFRvIEVubGFyZ2UgT3IgVXBsb2FkLi4uIiwibG9nbyI6IlRydWUifQ2.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "63jFTFDTfeErw3ttsednW9",
+        "type": "Asset",
+        "createdAt": "2019-02-10T16:52:32.014Z",
+        "updatedAt": "2019-02-10T16:54:51.129Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2019-02-10T16:54:51.129Z",
+        "firstPublishedAt": "2019-02-10T16:54:51.129Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Chad M. Grad Elem 5-24-2008 003"
+        },
+        "description": {
+          "en-US": "Kids that apply themselves"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/63jFTFDTfeErw3ttsednW9/c9e543c6b9487fbb190a70c950a86261/Chad_M._Grad_Elem_5-24-2008_003.jpg",
+            "details": {
+              "size": 1044646,
+              "image": {
+                "width": 2272,
+                "height": 1704
+              }
+            },
+            "fileName": "Chad M. Grad Elem 5-24-2008 003.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "2HhTbaJReBljRnw4wf6OsN",
+        "type": "Asset",
+        "createdAt": "2019-02-12T15:17:58.697Z",
+        "updatedAt": "2019-02-12T15:19:33.882Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2019-02-12T15:19:33.882Z",
+        "firstPublishedAt": "2019-02-12T15:19:33.882Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "hpi-natl-change forecast"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/2HhTbaJReBljRnw4wf6OsN/dc9900fdb5b9876df37ad9e49fc01863/01-hpi-natl-change-1902.jpg",
+            "details": {
+              "size": 126686,
+              "image": {
+                "width": 947,
+                "height": 592
+              }
+            },
+            "fileName": "01-hpi-natl-change-1902.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "4moVIAme5PXLZw071kzqbq",
+        "type": "Asset",
+        "createdAt": "2019-02-18T14:14:17.769Z",
+        "updatedAt": "2019-02-18T14:15:35.865Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-02-18T14:15:35.865Z",
+        "firstPublishedAt": "2019-02-18T14:15:35.865Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "virtual-tour-275459-03"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/4moVIAme5PXLZw071kzqbq/de68bedc53595849e70914011d6fb541/virtual-tour-275459-03.jpg",
+            "details": {
+              "size": 6028669,
+              "image": {
+                "width": 6620,
+                "height": 3723
+              }
+            },
+            "fileName": "virtual-tour-275459-03.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "60wXJW4Wc3FJTzpYjRzJjr",
+        "type": "Asset",
+        "createdAt": "2019-02-19T14:17:33.110Z",
+        "updatedAt": "2019-02-19T14:19:43.680Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 35,
+        "publishedAt": "2019-02-19T14:19:43.680Z",
+        "firstPublishedAt": "2019-02-19T14:19:43.680Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 36,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Lake Nona Golf and Country Club Spectacular"
+        },
+        "description": {
+          "en-US": "Looking for one of the best priced homes in the Lake Nona Golf and Country Club you found it.Enjoy the Tom Fazio designed championship golf course and all the amenities that go along with this beautiful Club and begin your next chapter in Lake Nona in this Gorgeous home offering 4 bedrooms 3.5 bathrooms, and private den  3 car garage fully remodeled kitchen and bathrooms overlooking peaceful pond and views of the #2 Fairway. This home offers circular driveway on private street just steps to Magnificent Georgian Clubhouse and lodge, Bath and Racquet club and Lakefront dock. Enjoy elegant dining and minutes to exquisite eateries all located in the growing Lake Nona community offering proximity to Lake Nona Medical City, Drive Shack, UCF Medical College, Nemours Children’s Hospital and much more! "
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/60wXJW4Wc3FJTzpYjRzJjr/1969f965634096ebf1e47acbd268c4f6/virtual-tour-275459-01.jpg",
+            "details": {
+              "size": 4809076,
+              "image": {
+                "width": 6439,
+                "height": 3621
+              }
+            },
+            "fileName": "virtual-tour-275459-01.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "6nhezCVHdWVdoWZSzkbfJb",
+        "type": "Asset",
+        "createdAt": "2019-02-20T15:37:41.796Z",
+        "updatedAt": "2019-03-18T02:59:21.059Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 30,
+        "publishedAt": "2019-03-18T02:59:21.059Z",
+        "firstPublishedAt": "2019-03-18T02:59:21.059Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 31,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Universal Beijing Resort begins construction!"
+        },
+        "description": {
+          "en-US": "When combined with the biggest-ever budget and real estate, the possibilities are pretty much limitless – something which should not only get any red-blooded theming fan excited, generally, but which also sounds suspiciously similar to the situation here in Orlando, with a brand-new massive chunk of land and construction just beginning on it."
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/6nhezCVHdWVdoWZSzkbfJb/48d12539821f3f5be29d637ca67e3206/Universal-Beijing-Resort-construction-1.jpg",
+            "details": {
+              "size": 304885,
+              "image": {
+                "width": 1200,
+                "height": 500
+              }
+            },
+            "fileName": "Universal-Beijing-Resort-construction-1.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "5Wi9R4JxL0UPvSdIxial1L",
+        "type": "Asset",
+        "createdAt": "2019-02-20T15:48:02.726Z",
+        "updatedAt": "2019-03-18T02:57:31.944Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 199,
+        "publishedAt": "2019-03-18T02:57:31.944Z",
+        "firstPublishedAt": "2019-03-18T02:57:31.944Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 200,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Fall-decor-at-Magic-Kingdom-5"
+        },
+        "description": {
+          "en-US": "Have you ever wondered when the best time to head to Disney is? If you are only able to pick one season to visit us here in Orlando and live out your dreams for one complete day fall is your best bet! With optimal cool weather and statistically less volume throughout the fall, maximize your time in the park by visiting during this most optimal season! "
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/5Wi9R4JxL0UPvSdIxial1L/54ff50b87aad077a6eed248cf35ae7ea/Fall-decor-at-Magic-Kingdom-5.jpg",
+            "details": {
+              "size": 1639187,
+              "image": {
+                "width": 1300,
+                "height": 867
+              }
+            },
+            "fileName": "Fall-decor-at-Magic-Kingdom-5.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "1L755KUZy9N3INy09vAGY6",
+        "type": "Asset",
+        "createdAt": "2019-02-25T14:27:11.446Z",
+        "updatedAt": "2019-02-25T15:11:50.260Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-02-25T15:11:50.260Z",
+        "firstPublishedAt": "2019-02-25T15:11:50.260Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "virtual-tour-227322-10-1485336359"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/1L755KUZy9N3INy09vAGY6/c3706e18e2a3bd9f6218436316eff661/virtual-tour-227322-10-1485336359.jpg",
+            "details": {
+              "size": 174809,
+              "image": {
+                "width": 1200,
+                "height": 800
+              }
+            },
+            "fileName": "virtual-tour-227322-10-1485336359.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "yEQaA5woSO0xK9P0g7mpX",
+        "type": "Asset",
+        "createdAt": "2019-03-11T13:16:22.801Z",
+        "updatedAt": "2019-03-11T13:16:27.369Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-03-11T13:16:27.369Z",
+        "firstPublishedAt": "2019-03-11T13:16:27.369Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "virtual-tour-276187-08"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/yEQaA5woSO0xK9P0g7mpX/7a28927bc34a7965ba68462a201cc2e1/virtual-tour-276187-08.jpg",
+            "details": {
+              "size": 268300,
+              "image": {
+                "width": 1680,
+                "height": 1120
+              }
+            },
+            "fileName": "virtual-tour-276187-08.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "2BIiCDelnYFwdlXlGmWOmA",
+        "type": "Asset",
+        "createdAt": "2019-03-11T13:16:22.937Z",
+        "updatedAt": "2019-03-11T13:16:27.367Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-03-11T13:16:27.367Z",
+        "firstPublishedAt": "2019-03-11T13:16:27.367Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "virtual-tour-276187-13"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/2BIiCDelnYFwdlXlGmWOmA/6130d6a67ae16a230a280adc26b19c49/virtual-tour-276187-13.jpg",
+            "details": {
+              "size": 404299,
+              "image": {
+                "width": 1680,
+                "height": 1120
+              }
+            },
+            "fileName": "virtual-tour-276187-13.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "2nV35UYppbyIYcahdfB8ii",
+        "type": "Asset",
+        "createdAt": "2019-03-11T13:16:22.987Z",
+        "updatedAt": "2019-03-11T13:16:27.140Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-03-11T13:16:27.140Z",
+        "firstPublishedAt": "2019-03-11T13:16:27.140Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "virtual-tour-276187-32"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/2nV35UYppbyIYcahdfB8ii/bc8fe0668eb706bfaec3493bc9aa35f1/virtual-tour-276187-32.jpg",
+            "details": {
+              "size": 499288,
+              "image": {
+                "width": 1680,
+                "height": 1120
+              }
+            },
+            "fileName": "virtual-tour-276187-32.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "7l5d47cc9XJMyZSpUD2kGO",
+        "type": "Asset",
+        "createdAt": "2019-03-14T13:14:41.639Z",
+        "updatedAt": "2019-03-14T13:14:44.123Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-03-14T13:14:44.123Z",
+        "firstPublishedAt": "2019-03-14T13:14:44.123Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "12191 Obelia St Orlando,Florida 32827 - charlesduvall8@gmail.com - Gmail"
+        },
+        "file": {
+          "en-US": {
+            "url": "//downloads.ctfassets.net/xkm3wy5bii5q/7l5d47cc9XJMyZSpUD2kGO/fc709ece98600459879cd50f548c0dbf/12191_Obelia_St_Orlando_Florida_32827_-_charlesduvall8_gmail.com_-_Gmail.webarchive",
+            "details": {
+              "size": 14140868
+            },
+            "fileName": "12191 Obelia St Orlando,Florida 32827 - charlesduvall8@gmail.com - Gmail.webarchive",
+            "contentType": "application/x-webarchive"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "id": "4CeWC5EWmFavn6ljI5spx6",
+        "type": "Asset",
+        "createdAt": "2019-03-14T13:17:51.315Z",
+        "updatedAt": "2019-03-14T13:18:19.450Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-03-14T13:18:19.450Z",
+        "firstPublishedAt": "2019-03-14T13:18:19.450Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "IMG 0159"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/xkm3wy5bii5q/4CeWC5EWmFavn6ljI5spx6/b6746c785fa02c467522092cc398af9d/IMG_0159.jpg",
+            "details": {
+              "size": 1355595,
+              "image": {
+                "width": 2016,
+                "height": 1512
+              }
+            },
+            "fileName": "IMG_0159.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "7a6T77cGsQpfQ1iq7B9A3h",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "createdAt": "2019-01-27T22:00:44Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedAt": "2019-01-27T22:00:44Z"
+      }
+    },
+    {
+      "name": "Portuguese (Brazil)",
+      "code": "pt-BR",
+      "fallbackCode": null,
+      "default": false,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "6EEssz4on8HTjKZGzhmsQO",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "createdAt": "2019-03-18T13:15:41Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedAt": "2019-03-18T13:15:41Z"
+      }
+    }
+  ],
+  "webhooks": [
+    {
+      "name": "Added Content To The Site",
+      "url": "https://api.netlify.com/build_hooks/5c589df5d55fa10172816bc3",
+      "httpBasicUsername": null,
+      "topics": [
+        "Entry.publish",
+        "Entry.unpublish",
+        "Entry.delete"
+      ],
+      "filters": null,
+      "transformation": null,
+      "sys": {
+        "type": "WebhookDefinition",
+        "id": "14yB95D03iUqNn79WNsppG",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "xkm3wy5bii5q"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "createdAt": "2019-02-04T20:26:55Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1OeRx3Kn1dS4J84x1fvvze"
+          }
+        },
+        "updatedAt": "2019-02-04T20:26:55Z"
+      },
+      "headers": [
+      ]
+    }
+  ],
+  "roles": [
+  ]
+}
